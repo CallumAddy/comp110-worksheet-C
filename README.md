@@ -2,6 +2,7 @@
 Base repository for COMP110 worksheet C
 
 a) State what task this algorithm performs.
+This algorithm scans the list to see if it finds any duplicate items.
 
 b) Explain why the worst case running time of the algorithm is quadratic, i.e.
 O(n^2).
@@ -12,18 +13,28 @@ i − 1.
 
 c) Explain why the algorithm is still correct.
 
-because n is just the value of i looping through the values
+this is still correct because list[i] will be tested against elements up from i-1 and the elements after this are tested because i is increased.
 
 d) Explain why the algorithm will run approximately twice as fast.
 
-because it doesn't need to loop through n it just needs to loop through i
+it only checks itself against another element once, and it won't ever check against itself therefore the program will run twice as fast as before.
 
 e) Is the time complexity of the algorithm still quadratic? Explain your answer.
 
 yes because it's still looping to the power of 2 because it loops through i and it loops through j
 
 f) 
+https://wiki.python.org/moin/TimeComplexity
+"Sort:
 
+O(n log n)"
+
+g)
+
+h)
+the second algorith would be faster this is because it tests itself against the elements only once and never tests against itself
+i)
+I would use the slower algorith because it would be easier to maintain because it's slower and i can manage the properties easier.
 1) procedure HASDUPLICATE(list)
 
 a) This line starts the function called "HasDuplicate(list)" and adds the variable list in the parameters
